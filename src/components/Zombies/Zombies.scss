@@ -1,0 +1,28 @@
+.zombie-list{
+    margin: 5px;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+    .zombie{
+        margin: 5px;
+        width: 90px;
+        height: 140px;
+        min-width: 90px;
+        cursor: pointer;
+        background-color: transparent;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position-x: center;
+        border: 0;
+        padding: 0;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        padding-top: 120px;
+        color: white;
+        &:hover, &:focus{
+            border: 2px dashed #bbb;
+            cursor: grab;
+           }
+    }
+}

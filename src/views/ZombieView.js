@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Locations from "../components/Locations/Locations";
+import Header from "../components/Header/Header"
 import axios from "axios";
 
 const API_URL = 'http://localhost:4000';
@@ -62,7 +63,10 @@ const ZombieView = () => {
     getLocationData();
   };
 
-  return <div className="zombie-manager">
+  return (
+  <div className="zombie">
+  <Header />
+  <div className="zombie-manager">
     { location.map((l, index) => {
         return <div key={index}>
             <Locations
@@ -75,7 +79,9 @@ const ZombieView = () => {
             />
         </div>
         })
-    }</div>;
+    }</div>
+    </div>
+    );
 };
 
 export default ZombieView;

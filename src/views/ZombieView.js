@@ -3,7 +3,7 @@ import Locations from "../components/Locations/Locations";
 import Header from "../components/Header/Header"
 import axios from "axios";
 
-const API_URL = 'http://localhost:4000';
+const API_URL = 'http://zombies.suyland.com';
 const ACTIVE_DROP_CLASS = 'active-drop';
 
 const ZombieView = () => {
